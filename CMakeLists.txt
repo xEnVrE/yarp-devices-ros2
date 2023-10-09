@@ -65,11 +65,11 @@ find_package(test_msgs REQUIRED)
 
 find_package(visualization_msgs REQUIRED)
 
-if(YARP_ROS2_USE_SYSTEM_map2d_nws_ros2_msgs)
-  find_package(map2d_nws_ros2_msgs REQUIRED)
-else()
-  add_subdirectory(ros2_interfaces_ws/src/map2d_nws_ros2_msgs)
-endif()
+# if(YARP_ROS2_USE_SYSTEM_map2d_nws_ros2_msgs)
+#   find_package(map2d_nws_ros2_msgs REQUIRED)
+# else()
+#   add_subdirectory(ros2_interfaces_ws/src/map2d_nws_ros2_msgs)
+# endif()
 
 add_subdirectory(src)
 
